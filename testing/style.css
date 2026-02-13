@@ -1,0 +1,26 @@
+.btn {
+  position: relative;
+  padding: 12px 24px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: 0.4s;
+}
+
+.btn:hover::before {
+  left: 120%;
+}
