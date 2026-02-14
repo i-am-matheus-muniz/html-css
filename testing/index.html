@@ -1,12 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trying pseudo-elements</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muniv — Modern Landing Page</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <button class="btn">Click me!</button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__content">
+      <a class="logo" href="#">Muniv</a>
+
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--small" href="#contact">Get Started</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="badge">⚡ Modern Web Design</p>
+          <h1>Build clean websites that look premium.</h1>
+          <p class="hero__subtitle">
+            A modern responsive layout using only HTML & CSS.
+            Perfect as a portfolio base or landing page.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Start Now</a>
+            <a class="btn btn--ghost" href="#features">See Features</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <strong>Fast</strong>
+              <span>Lightweight code</span>
+            </div>
+            <div class="stat">
+              <strong>Modern</strong>
+              <span>Clean layout</span>
+            </div>
+            <div class="stat">
+              <strong>Responsive</strong>
+              <span>Mobile-first</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <p class="card__title">Your Next Project</p>
+            <p class="card__desc">
+              This area simulates a product preview, dashboard, or portfolio image.
+            </p>
+
+            <div class="card__grid">
+              <div class="mini"></div>
+              <div class="mini"></div>
+              <div class="mini"></div>
+              <div class="mini"></div>
+            </div>
+
+            <p class="card__note">✨ Tip: Replace this with an image later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <h2>Features that feel modern</h2>
+          <p>
+            Built with clean structure, spacing, and components.
+            Easy to customize.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="feature">
+            <h3>Responsive Grid</h3>
+            <p>
+              Uses CSS Grid so your layout adapts naturally from desktop to mobile.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Modern Typography</h3>
+            <p>
+              Better spacing, readable font sizes, and balanced hierarchy.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Reusable Buttons</h3>
+            <p>
+              Button styles are reusable with modifiers like ghost and small.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Clean Sections</h3>
+            <p>
+              Each section is consistent: padding, max width, and spacing.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Hover Effects</h3>
+            <p>
+              Smooth transitions for a premium feel without heavy animations.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Easy Customization</h3>
+            <p>
+              Colors and spacing are controlled with CSS variables.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <div class="about__text">
+          <h2>Designed to be your starting point</h2>
+          <p>
+            This layout is a real-world structure: header + hero + sections.
+            You can turn it into a portfolio, business website, or product page.
+          </p>
+
+          <ul class="list">
+            <li>Clean HTML structure</li>
+            <li>Reusable CSS classes</li>
+            <li>Mobile-first responsive design</li>
+          </ul>
+        </div>
+
+        <div class="about__box">
+          <div class="box">
+            <h3>Layout idea</h3>
+            <p>
+              This side block is made with CSS and can be replaced by:
+              screenshots, cards, testimonials, or pricing.
+            </p>
+
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Grid</span>
+              <span>Flex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="section">
+      <div class="container cta">
+        <div class="cta__content">
+          <h2>Want this as your portfolio base?</h2>
+          <p>
+            Copy it, customize it, and start posting your progress daily.
+          </p>
+        </div>
+
+        <a class="btn" href="#">Contact Me</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2026 MuniV. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
